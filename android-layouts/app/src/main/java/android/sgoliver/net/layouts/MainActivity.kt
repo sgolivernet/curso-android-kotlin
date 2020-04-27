@@ -7,6 +7,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_linearlayout)
+
+        //Modificar aquí el nombre del layout con el que ejecutar la aplicación
+        setContentView(R.layout.activity_main_framelayout)
     }
 }
