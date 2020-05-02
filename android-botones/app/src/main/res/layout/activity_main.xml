@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/lblMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <Button android:id="@+id/btnBotonSimple"
+        android:text="@string/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblMensaje" />
+
+    <ToggleButton android:id="@+id/btnToggle"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBotonSimple" />
+
+    <Switch android:id="@+id/btnSwitch"
+        android:text="@string/seleccion"
+        android:switchPadding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnToggle" />
+
+    <ImageButton android:id="@+id/btnImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icono_estrella"
+        android:src="@drawable/ic_estrella"
+        android:padding="16dp"
+        android:layout_below="@id/btnSwitch" />
+
+    <Button android:id="@+id/btnBotonMasImagen"
+        android:text="@string/click"
+        android:drawableLeft="@drawable/ic_estrella"
+        android:drawablePadding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnImagen" />
+
+    <ToggleButton android:id="@+id/btnPersonalizado"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_style"
+        android:layout_below="@id/btnBotonMasImagen" />
+
+    <Button android:id="@+id/btnSinBorde1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click"
+        android:textColor="@color/colorPrimary"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@id/btnPersonalizado" />
+
+    <ImageButton android:id="@+id/btnSinBorde2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icono_estrella"
+        android:src="@drawable/ic_estrella"
+        android:padding="16dp"
+        android:tint="@color/colorPrimary"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@id/btnSinBorde1" />
+
+    <LinearLayout
+        android:id="@+id/barraBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/buttonBarStyle">
+
+        <Button android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Aceptar"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Cancelar"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Botones</string>
+    <string name="click">Click</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="seleccion">Opción</string>
+    <string name="icono_estrella">Icono Estrella</string>
+    <string name="texto_de_prueba">Texto de prueba</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="Cancelar">Cancelar</string>
+</resources>
