@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/lblEtiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/verde"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/texto_ejemplo" />
+
+    <EditText android:id="@+id/txtBasico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_usuario"
+        android:hint="Nombre de Usuario"
+        android:inputType="text" />
+
+    <Button android:id="@+id/btnSetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Text" />
+
+    <Button android:id="@+id/btnNegrita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Negrita" />
+
+    <ImageView android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/logoandroid"
+        android:contentDescription="logo de android" />
+
+</LinearLayout>
