@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView android:id="@+id/lblUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario"
+        android:textStyle="bold" />
+
+    <EditText android:id="@+id/txtUsuario"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text" />
+
+    <TextView android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contrasena"
+        android:textStyle="bold" />
+
+    <EditText android:id="@+id/txtPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword" />
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAceptar"
+            android:text="@string/login"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <TextView android:id="@+id/lblMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
