@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Appbar</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_nuevo">Nuevo</string>
+    <string name="action_opciones">Opciones</string>
+    <string name="Título">Titulo largo appbar</string>
+    <string name="Subtítulo">Subtítulo appbar</string>
+    <string name="action_1">Acción 1</string>
+    <string name="action_2">Acción 2</string>
+</resources>
